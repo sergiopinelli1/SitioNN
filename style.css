@@ -276,7 +276,7 @@ body{
 .conjunto_pro{
     display: flex;
     max-width: var(---max-width-16);
-    width: 100%;
+    width: 90%;
     gap: 30px;
     align-items: center;
     justify-content: center;
