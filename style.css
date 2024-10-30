@@ -264,19 +264,18 @@ body{
     align-items: center;
     gap: var(--gap-titulo-conjunto-section);
     padding: var(--section-padding);
-
 }
 
 .titulo_seccion_pro{
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-medium);
-    max-width: var(---max-width-16);
+    max-width: var(---max-width-1);
 }
 
 .conjunto_pro{
     display: flex;
-    max-width: var(---max-width-16);
-    width: 90%;
+    max-width: var(---max-width-1);
+    width: 100%;
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -289,12 +288,12 @@ body{
 .item_pro{
     display: flex;
     flex-direction: column;
-    max-width: var(---max-width-16);
+    max-width: var(---max-width-1);
     gap: 15px;
 }
 
 .imagen_pro{
-    height: 500px;
+    height: 380px;
     border-radius: 20px;
 }
 
@@ -391,6 +390,7 @@ body{
     gap: 30px;
     align-items: center;
     justify-content: center;
+    padding: 0px 50px;
 }
 
 .entrenamiento{
