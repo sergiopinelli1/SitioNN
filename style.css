@@ -101,7 +101,7 @@
     list-style: none;
     text-decoration: none;
     font-family: var(--font-family), Arial, Helvetica, sans-serif;
-    /* border: 1px solid rebeccapurple; */
+    border: 1px solid rebeccapurple;
 }
 
 a{
@@ -618,7 +618,7 @@ body{
     gap: var(--gap-item-img);
     align-items: center;
     justify-content: center;
-    padding: 0px 50px;
+    /* padding: 0px 50 px; */
 }
 
 .entrenamiento{
@@ -648,8 +648,8 @@ body{
     height: 50vh;
     width: 100%;
     justify-content: left;
-    padding: 70px 80px;
-    align-items: end;
+    padding: 0px 40px 30px 40px;
+    /* align-items: end; */
     transition: transform 0.6s ease;
 }
 
@@ -657,20 +657,22 @@ body{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    justify-content: left;
-    width: 100%;
+    width: 20%;
 }
 
 .info_imagen_solucion{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    justify-content: center;
+    align-items: end;
 }
 
 .texto_solucion, .boton_solucion{
     font-size: var(--font-size-lg);
     color: var(--color-btn-compra);
     font-weight: var(--font-weight-light);
+    justify-content: left;
 }
 
 .texto2_solucion{
@@ -681,7 +683,6 @@ body{
 .boton_solucion{
     border: 1px solid white;
     border-radius: var(--border-radius-btn-mas-compra);
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.28);
     padding: var(--padding-btn-mas-compra);
     font-size: var(--font-size-mt);
@@ -810,7 +811,7 @@ body{
 /* ---------------------- */
 /* seccion_beneficios */
 /* ---------------------- */
-
+/* 
 .seccion_fun{
     display: flex;
     padding: var(--section-padding);
@@ -878,9 +879,108 @@ body{
     background-color: var(--back-trans-apple);
 }
 
+ */
 
 
+ .seccion_soluciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--section-padding);
+    gap: var(--gap-titulo-conjunto-section-6);
+}
 
+.titulo_seccion_soluciones {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-medium);
+}
+
+.conjunto_soluciones {
+    display: flex;
+    max-width: var(--max-width-16);
+    width: 100%;
+    gap: var(--gap-item-img);
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+.entrenamiento {
+    background-image: url(./img_productos/Captura\ de\ pantalla\ 2024-10-30\ a\ la\(s\)\ 16.03.17.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lesion {
+    background-image: url(./img_productos/Captura\ de\ pantalla\ 2024-10-30\ a\ la\(s\)\ 16.35.26.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.spa {
+    background-image: url(./img_productos/Captura\ de\ pantalla\ 2024-10-30\ a\ la\(s\)\ 16.36.35.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.link_solucion {
+    display: flex;
+    border-radius: var(--border-img);
+    height: 48vhpx; /* Mantiene la altura del contenedor */
+    width: 380px; /* Ajusta según sea necesario */
+    justify-content: center; /* Alinea el contenido horizontalmente */
+    align-items: flex-end; /* Alinea el contenido en la parte inferior */
+    transition: transform 0.6s ease;
+    overflow: hidden; /* Evita que el contenido desborde */
+}
+
+.item_solucion {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center; /* Cambia a 'center' para centrar el contenido */
+    width: 100%; /* Mantiene el ancho completo dentro del contenedor */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.info_imagen_solucion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center; /* Alinea los textos en el centro */
+    margin-top: auto; /* Empuja el texto hacia la parte inferior del contenedor */
+    padding: 10px 0; /* Ajusta el padding superior/inferior para mover el texto */
+}
+
+.texto_solucion, .boton_solucion {
+    font-size: var(--font-size-lg);
+    color: var(--color-btn-compra);
+    font-weight: var(--font-weight-light);
+}
+
+.texto2_solucion {
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--letter-space6);
+}
+
+.boton_solucion {
+    border: 1px solid white;
+    border-radius: var(--border-radius-btn-mas-compra);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.28);
+    padding: var(--padding-btn-mas-compra);
+    font-size: var(--font-size-mt);
+    font-weight: var(--font-weight-light);
+    letter-spacing: var(--letter-space2);
+}
+
+.link_solucion:hover {
+    transform: scale(1.03);
+}
 
 
 
