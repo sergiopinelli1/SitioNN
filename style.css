@@ -668,7 +668,7 @@ body{
 }
 
 .texto_solucion, .boton_solucion{
-    font-size: var(--font-size-mlg);
+    font-size: var(--font-size-lg);
     color: var(--color-btn-compra);
     font-weight: var(--font-weight-light);
 }
@@ -692,9 +692,6 @@ body{
 .link_solucion:hover{
     transform: scale(1.03);
 } 
-
-
-
 
 
 
