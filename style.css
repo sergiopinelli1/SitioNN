@@ -115,8 +115,6 @@ body{
 
 
 
-
-
 /* ---------------------- */
 /* nav */
 /* ---------------------- */
@@ -124,6 +122,8 @@ body{
 .header_head{
     display: flex;
     background-color: var(--back-header);
+    position: -webkit-sticky;
+    top: 0;
 }
 
 .header_container{
