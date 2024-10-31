@@ -180,7 +180,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 200px 100px;
-    gap: 30px;
+    gap: var(--gap-titulo-conjunto-section-3)
 }
 
 .titulo_hero{
@@ -193,7 +193,7 @@ body{
 .texto_hero{
     color: var(--color1);
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-me);
 }
 
 .conjunto_btn_hero{
