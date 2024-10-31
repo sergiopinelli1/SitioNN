@@ -124,6 +124,7 @@ body{
     background-color: var(--back-header);
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
 }
 
 .header_container{
