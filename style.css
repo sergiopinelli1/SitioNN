@@ -645,7 +645,7 @@ body{
 .link_solucion {
     display: flex;
     border-radius: var(--border-img);
-    height: 48vhpx; /* Mantiene la altura del contenedor */
+    height: 50vh; /* Mantiene la altura del contenedor */
     width: 380px; /* Ajusta según sea necesario */
     justify-content: center; /* Alinea el contenido horizontalmente */
     align-items: flex-end; /* Alinea el contenido en la parte inferior */
@@ -660,6 +660,7 @@ body{
     justify-content: center; /* Cambia a 'center' para centrar el contenido */
     width: 100%; /* Mantiene el ancho completo dentro del contenedor */
     text-align: center; /* Alinea el texto al centro */
+    padding: 0px 50px 30px 50px;
 }
 
 .info_imagen_solucion {
@@ -668,7 +669,6 @@ body{
     gap: 8px;
     align-items: center; /* Alinea los textos en el centro */
     margin-top: auto; /* Empuja el texto hacia la parte inferior del contenedor */
-    padding: 10px 0; /* Ajusta el padding superior/inferior para mover el texto */
 }
 
 .texto_solucion, .boton_solucion {
