@@ -35,7 +35,7 @@
 
     --nav-padding: 30px;
 
-    --section-padding: 80px 0px;
+    --section-padding: 60px 0px;
 
     --gap-titulo-conjunto-section: 60px;
 }
@@ -263,18 +263,18 @@ body{
     justify-content: center;
     align-items: center;
     gap: var(--gap-titulo-conjunto-section);
-    padding: var(--section-padding);
+    padding: 40px 0px 60px 0px;
 }
 
 .titulo_seccion_pro{
     font-size: var(--font-size-4xl);
     font-weight: var(--font-weight-medium);
-    max-width: var(---max-width-1);
+    max-width: var(---max-width-16);
 }
 
 .conjunto_pro{
     display: flex;
-    max-width: var(---max-width-1);
+    max-width: var(---max-width-16);
     width: 100%;
     gap: 30px;
     align-items: center;
@@ -288,7 +288,7 @@ body{
 .item_pro{
     display: flex;
     flex-direction: column;
-    max-width: var(---max-width-1);
+    max-width: var(---max-width-16);
     gap: 15px;
 }
 
@@ -353,8 +353,63 @@ body{
 }
 
 
+/* Estilo para el cuadro comparativo */
+.comparativo {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    max-width: 600px;
+}
 
+.comparativo h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
 
+.tabla_comparativo {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla_comparativo th,
+.tabla_comparativo td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla_comparativo th {
+    background-color: #f0f0f0;
+}
+
+/* Ocultar el checkbox visualmente */
+.comparativo-checkbox {
+    display: none;
+}
+
+/* Mostrar cuadro comparativo cuando el checkbox está marcado */
+.comparativo-checkbox:checked ~ .comparativo {
+    display: block;
+}
+
+/* Estilo del botón */
+.btn_comparar_pro {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 980px;
+    padding: 11px 21px;
+    color: black;
+    font-size: 17px;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: -0.374px;
+    margin-left: -25px;
+}
+
+.btn_comparar_pro:hover {
+    background-color: #dedede;
+}
 
 
 
@@ -857,7 +912,7 @@ body{
 
 /* seccion famosos */
 
-.seccion_fam_uso {
+/* .seccion_fam_uso {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -898,7 +953,7 @@ body{
     gap: 6px;
     width: 80%;
     text-align: center;
-}
+} */
 
 
 
@@ -935,3 +990,113 @@ footer{
 }
 
 
+
+
+
+
+/* --------------- */
+/* ---- Comparar paneles ------------- */
+/* ----------------- */
+
+
+/* General Styles */
+.seccion_comparativo {
+    text-align: center;
+    padding: 6px;
+}
+
+/* Ocultar el input de checkbox */
+.toggle_input {
+    display: none;
+}
+
+/* Estilo del botón para mostrar/ocultar la tabla */
+.btn_toggle {
+    display: inline-block;
+    padding: 20px 56px;
+    background-color: white;
+    color: black;
+    border-radius: 980px;
+    font-size: 20px;
+    border: 2px solid black;
+    margin-left: -26px;
+}
+
+.btn_toggle:hover {
+    background-color: #dfdfdf;
+}
+
+/* Tabla oculta por defecto, se muestra cuando el checkbox está activado */
+.tabla_oculta {
+    display: none;
+    padding-top: 20px;
+}
+
+.toggle_input:checked + .btn_toggle + .tabla_oculta {
+    display: block; 
+}
+
+/* Estilos de la tabla */
+.tabla_comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos de las celdas de la tabla */
+.tabla_comparativa th,
+.tabla_comparativa td {
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 300px; /* Ajusta el ancho máximo que prefieras */
+    overflow-wrap: break-word; /* Permite que el texto se ajuste si excede el ancho */
+}
+
+/* Estilo de la primera columna de atributos */
+.tabla_comparativa .atributo {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 50px;
+    border-bottom: none; /* Sin línea inferior en la columna de atributos */
+}
+
+/* Estilo de los títulos de los paneles */
+.titulo_panel {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(34, 78, 252);
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo de las imágenes */
+.imagen_panel {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+/* Línea entrecortada centrada y más corta para cada celda de datos (excepto la columna de atributos) */
+.tabla_comparativa td:not(.atributo)::after {
+    content: "";
+    display: block;
+    width: 48%; /* Ajusta el porcentaje para hacer la línea más corta o larga */
+    margin: 10px auto 0; /* Centra la línea y añade un pequeño espacio superior */
+    border-bottom: 0.8px solid #ccc;
+}   
+
+.tabla_comparativa tbody tr:last-child td::after {
+    content: none;
+}
+
+
+.btn_comprar{
+    border: 1px solid rgb(0, 113, 227);
+    background-color: rgb(0, 113, 227);
+    border-radius: 980px;
+    padding: 11px 22px;
+    color: white;
+    font-size: 17px;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.374px;
+}
